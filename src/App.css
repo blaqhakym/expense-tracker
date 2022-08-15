@@ -1,0 +1,131 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 300px;
+}
+.expense {
+  text-transform: capitalize;
+  text-align: center;
+}
+.balance {
+  margin-bottom: 20px;
+
+}
+
+.balance h3 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.balance div {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.ie {
+  padding: 10px 0;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 2px 2px rgb(215, 215, 215);
+  border-radius: 5px;
+}
+
+.ie > div {
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ie .income {
+  border-right: 1px solid rgb(215, 215, 215);
+}
+
+.ie .green {
+  color: lightgreen;
+}
+
+.ie .red {
+  color: lightcoral;
+}
+
+.history h3 {
+  border-bottom: 1px solid rgb(215, 215, 215);
+  padding-bottom: 5px;
+}
+
+.history .content {
+  box-shadow: 0 2px 5px 1px rgb(215, 215, 215);
+  padding: 5px;
+  font-weight: 500;
+  border-right: 4px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 1s ease;
+}
+.history .cls{
+  position: absolute;
+  top: 7px;
+  left: -19px;
+  background-color: lightcoral;
+  color: white;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px 1px rgb(215, 215, 215);
+  display: none;
+}
+.history .content:hover .cls {
+  display: block;
+}
+
+.transaction h3 {
+  border-bottom: 1px solid rgba(215, 215, 215);
+  padding-bottom: 5px;
+}
+
+.transaction label span {
+  display: block;
+}
+
+form {
+  font-weight: 500;
+}
+form .text {
+  margin-bottom: 15px;
+}
+form input {
+  padding: 5px;
+  box-shadow: 0 2px 5px 1px rgb(215, 215, 215);
+  border: none;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+form button {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(114, 20, 254);
+  color: white;
+  border: none;
+}
